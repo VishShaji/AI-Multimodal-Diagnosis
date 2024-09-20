@@ -24,7 +24,7 @@ This system leverages the power of pretrained models, each fine-tuned for its re
   - **How to Fine-Tune**: Place your clinical notes in `/data/clinical_text/` in CSV format, and run the fine-tuning script to adapt the model to your specific needs.
   
   ```bash
-  git clone https://github.com/yourusername/ai-multimodal-diagnosis.git
+  git clone https://github.com/VishShaji/ai-multimodal-diagnosis.git
   cd ai-multimodal-diagnosis
   mkdir -p data/clinical_text/
   # Add your clinical notes CSV files and start fine-tuning!
@@ -78,7 +78,7 @@ This system leverages the power of pretrained models, each fine-tuned for its re
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/ai-multimodal-diagnosis.git
+   git clone https://github.com/VishShaji/ai-multimodal-diagnosis.git
    cd ai-multimodal-diagnosis
    ```
 

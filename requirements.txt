@@ -1,0 +1,13 @@
+torch==1.9.0
+torchvision==0.10.0
+transformers==4.9.2
+scikit-learn==0.24.2
+fastapi==0.68.0
+pydantic==1.8.2
+uvicorn==0.15.0
+pytest==6.2.5
+matplotlib==3.4.3
+pyyaml==5.4.1
+numpy==1.21.2
+scipy==1.7.1
+tqdm==4.62.2

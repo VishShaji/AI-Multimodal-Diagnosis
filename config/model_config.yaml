@@ -1,0 +1,61 @@
+# Model configurations
+models:
+  cnn:
+    pretrained_model: 'path/to/pretrained/cnn_model.pth'
+    num_classes: 2
+    epochs: 10
+    learning_rate: 0.001
+
+  vit:
+    pretrained_model: 'vit_base_patch16_224'
+    num_classes: 2
+    epochs: 10
+    learning_rate: 0.0001
+
+  lstm:
+    pretrained_model: 'emilyalsentzer/Bio_ClinicalBERT'
+    input_size: 10
+    hidden_size: 100
+    num_layers: 2
+    output_size: 1
+    epochs: 10
+    dropout_rate: 0.5
+    learning_rate: 0.001
+
+  bert:
+    pretrained_model: "emilyalsentzer/Bio_ClinicalBERT"
+    num_classes: 2
+    dropout_rate: 0.1
+    epochs: 10
+    learning_rate: 2e-5
+
+# Processor configurations
+processors:
+  image:
+    resize: [224, 224]
+    normalize_mean: [0.485, 0.456, 0.406]
+    normalize_std: [0.229, 0.224, 0.225]
+
+  text:
+    pretrained_model: "emilyalsentzer/Bio_ClinicalBERT"
+    max_length: 128
+    padding: true
+    truncation: true
+
+  time_series:
+    sequence_length: 50
+
+# Data loader configuration
+data_loader:
+  batch_size: 32
+  num_workers: 4
+
+# Logging configuration
+logging:
+  level: "INFO"
+  file_path: "logs/application.log"
+
+# Distributed training configuration
+distributed:
+  backend: "nccl"
+  init_method: "env://"

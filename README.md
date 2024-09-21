@@ -115,18 +115,19 @@ This project serves as a **scalable proof-of-concept**, showing the potential of
 
 ```bash
 ai-multimodal-diagnosis/
-│
-├── data/
-│   ├── clinical_text/         # Clinical text files (e.g., patient history, doctor notes)
-│   ├── time_series/           # Time-series data (e.g., ECG, heart rate)
-│   └── medical_images/        # Medical images (e.g., X-rays, MRIs)
-│
-├── models/                    # Contains pretrained models (e.g., BERT, CheXNet, ViT)
-│
-├── fine_tune_model.py          # Script to fine-tune models on new datasets
-│
-├── app.py                      # Frontend Flask app for model prediction
-│
+├── backend/
+│   ├── main.py
+│   ├── api.py
+│   ├── training/
+│   ├── evaluation/
+│   ├── inference/
+│   ├── models/
+│   ├── processing/
+│   └── requirements.txt
+├── frontend/
+│   └── 
+├── docker files/
+├── docker-compose.yml
 └── README.md                   # This documentation
 ```
 

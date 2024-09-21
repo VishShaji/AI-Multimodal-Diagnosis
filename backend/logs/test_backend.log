@@ -1,0 +1,1 @@
+2024-09-21 12:41:51,707 ERROR An error occurred: type object 'CNNModel' has no attribute 'from_pretrained'

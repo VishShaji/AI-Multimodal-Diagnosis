@@ -2,6 +2,9 @@
 
 A scalable proof-of-concept that integrates **AI and machine learning** models to assist in clinical diagnosis across **text data**, **time-series data**, and **medical imaging**. Built to handle multiple data modalities, this system is designed to be fine-tuned for specific clinical applications, making it a powerful tool for the medical community.
 
+![UI](https://github.com/VishShaji/AI-Multimodal-Diagnosis/blob/main/assets/Ui.png)
+
+
 ---
 
 ## 🌟 Features
